@@ -1,0 +1,212 @@
+body {
+    font-family: 'Minecraft', serif;
+    background-image: url(../imagens/fundo_site_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.fundo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+.titulo{
+    color: #fff;
+    opacity: 0.7;
+    text-shadow: -2px -2px 0 black,  
+    2px -2px 0 black,  
+    -2px 2px 0 black,  
+    2px 2px 0 black; 
+}
+
+.cabecalho .titulo{
+    display: flex;
+    justify-content: center;
+}
+.cabecalho .subtitulo{
+  color: #fff;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+.declaracao{
+    color: #fff;
+    opacity: 0.7;
+}
+
+.cartao{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.lista-personagens{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    padding: 12px;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.cartao .nome{
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: underline;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.cartao .coracao{
+    width: 20px;
+    height: 20px;
+    background-image: url(../imagens/coracao.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cartao .nivel-carta{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.cartao .imagem-carta{
+    max-width: 500px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.cartao .informacoes{
+    border-radius: 5px;
+    color: #ffffff;
+    display: flex;
+    padding: 0px;
+    opacity: 0.7;
+}
+
+.cartao .informacoes .informacoes-ataque{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+}
+
+.cartao .informacoes .informacao-ataque span{
+    font-size: 13px;
+}
+
+.cartao .informacoes .descricao{
+
+    padding: 10px;
+    max-height: 95px;
+    font-size: 13px;
+}
+
+.declaracao2{
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.linha{
+    border: none;  /* Remove a borda padrão */
+    height: 2px;   /* Define a espessura da linha */
+    background-color: #fff; /* Cor da linha */
+    width: 100%;    /* Define a largura da linha */
+    margin: 20px auto; /* Centraliza */
+}
+
+.titulo-historia{
+    color: #fff;
+    opacity: 0.7;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.nossa-historia{
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+   
+}
+
+.declaracao2-titulo{
+    color: #fff;
+    opacity: 0.7;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.linha2{
+    border: none;  /* Remove a borda padrão */
+    height: 2px;   /* Define a espessura da linha */
+    background-color: #fff; /* Cor da linha */
+    width: 100%;    /* Define a largura da linha */
+    margin: 20px auto; /* Centraliza */
+}
+.caixa {
+    float: left;
+    width: 50%; /* Define um tamanho para o elemento */
+}
+.btn-seta{
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.btn-seta.btn-voltar{
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover{
+    background-color: #ec6ed8;
+}
+
+.cartao .fundo-2{
+    border-radius: 10px;
+}
+
+audio {
+    width: 300px;
+    filter: invert(1); /* Muda a cor para modo escuro */
+}
